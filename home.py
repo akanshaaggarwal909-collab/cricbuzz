@@ -8,9 +8,9 @@ st.set_page_config(page_title="Home | Cricbuzz LiveStats", page_icon="🏠", lay
 
 st.title("🏠 Home")
 if st.button("Initialize Database"):
-   from utils.db_connection
-   import init_db init_db()
-   st.success("Database initialized!") 
+   from utils.db_connection import init_db
+   init_db()
+   st.success("Database initialized!")
 st.markdown("""
 ## About This Project
 
