@@ -7,6 +7,9 @@ import streamlit as st
 st.set_page_config(page_title="Home | Cricbuzz LiveStats", page_icon="🏠", layout="wide")
 
 st.title("🏠 Home")
+    if st.button("Initialise database"):
+       from utils.db_connection import init_db init_db()
+       st.success("Database initialized!") 
 
 st.markdown("""
 ## About This Project
